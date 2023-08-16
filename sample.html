@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/sample.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <title>Sample</title>
+  </head>
+  <body>
+    <div>
+      <input type="text" id="name" />
+      <button id="append" onclick="appendInputText()">append</button>
+      <button id="appendTo" onclick="appendToInputText()">appendTo</button>
+      <button id="prepend" onclick="prependInputText()">prepend</button>
+      <button id="after" onclick="afterInputText()">after</button>
+      <button id="before" onclick="beforeInputText()">before</button>
+      <button id="remove" onclick="remove()">remove</button>
+      <ul>
+        <li>No.1</li>
+        <li>No.2</li>
+      </ul>
+    </div>
+    <div>
+      <input type="text" id="text" />
+      <button id="html" onclick="htmlInputText()">html</button>
+      <div id="context">original</div>
+    </div>
+    <form action="" method="post">
+      <div class="form_item">
+        <label for="name">お名前：</label>
+        <input type="text" id="name" name="name" />
+      </div>
+      <div class="form_item">
+        <label for="mail">メールアドレス：</label>
+        <input type="email" id="mail" name="mail" />
+      </div>
+      <div class="form_item">
+        <label for="message">メッセージ：</label>
+        <textarea id="message" name="message"></textarea>
+      </div>
+      <button type="“submit">送信</button>
+    </form>
+    <div>
+      <input type="text" id="localStorage" />
+      <button id="localStorage" onclick="saveLocalStorage()">
+        localStorage
+      </button>
+      <button id="alertLocalStorage" onclick="alertLocalStorage()">
+        alert
+      </button>
+      <button id="dayjs" onclick="showDays()">dayjs</button>
+    </div>
+    <div>
+      <div id="currentWeather"></div>
+      <button id="weather" onclick="getWeatherInfo()">weather</button>
+      <button id="clear" onclick="clearWeatherInfo()">clear</button>
+      <div class="box-text-dummy-img__loading loaded">
+        <img src="images/loading.gif" />
+        <!-- <i class="fa fa-spinner fa-spin"></i> -->
+      </div>
+    </div>
+    <script src="js/sample.js"></script>
+  </body>
+</html>

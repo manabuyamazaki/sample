@@ -1,0 +1,18 @@
+.box-text-dummy-img__loading {
+  width: fit-content;
+  margin: auto;
+  overflow: hidden;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  box-shadow: #444 0 0 5px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background: #fff;
+  background-color: #fff;
+  transition: all 1s;
+}
+.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
